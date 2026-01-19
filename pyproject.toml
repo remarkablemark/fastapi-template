@@ -1,10 +1,10 @@
 [project]
-name = "python_package_template"
+name = "fastapi-template"
 version = "0.0.0"
 authors = [
     { name="Mark", email="mark@remarkablemark.org" },
 ]
-description = "Python Package Template"
+description = "FastAPI Template"
 readme = "README.md"
 requires-python = ">=3.8"
 classifiers = [
@@ -35,8 +35,8 @@ test = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/remarkablemark/python_package_template"
-Issues = "https://github.com/remarkablemark/python_package_template/issues"
+Homepage = "https://github.com/remarkablemark/fastapi-template"
+Issues = "https://github.com/remarkablemark/fastapi-template/issues"
 
 [tool.black]
 fast = true

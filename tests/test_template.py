@@ -1,4 +1,4 @@
-from python_package_template import hello
+from fastapi-template import hello
 
 
 def test_hello() -> None:

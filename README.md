@@ -1,10 +1,10 @@
-# python_package_template
+# fastapi-template
 
-[![PyPI version](https://img.shields.io/pypi/v/python_package_template)](https://pypi.org/project/python_package_template/)
-[![codecov](https://codecov.io/gh/remarkablemark/python_package_template/graph/badge.svg?token=A5tAkYLEAw)](https://codecov.io/gh/remarkablemark/python_package_template)
-[![lint](https://github.com/remarkablemark/python_package_template/actions/workflows/lint.yml/badge.svg)](https://github.com/remarkablemark/python_package_template/actions/workflows/lint.yml)
+[![PyPI version](https://img.shields.io/pypi/v/fastapi-template)](https://pypi.org/project/fastapi-template/)
+[![codecov](https://codecov.io/gh/remarkablemark/fastapi-template/graph/badge.svg?token=A5tAkYLEAw)](https://codecov.io/gh/remarkablemark/fastapi-template)
+[![lint](https://github.com/remarkablemark/fastapi-template/actions/workflows/lint.yml/badge.svg)](https://github.com/remarkablemark/fastapi-template/actions/workflows/lint.yml)
 
-🐍 Python Package Template
+🐍 FastAPI Template
 
 ## Prerequisites
 
@@ -15,7 +15,7 @@
 Install the package:
 
 ```sh
-pip install python_package_template
+pip install fastapi-template
 ```
 
 ## Usage
@@ -23,11 +23,11 @@ pip install python_package_template
 Print the greeting:
 
 ```py
-from python_package_template import hello
+from fastapi-template import hello
 
 print(hello())
 ```
 
 ## License
 
-[MIT](https://github.com/remarkablemark/python_package_template/blob/master/LICENSE)
+[MIT](https://github.com/remarkablemark/fastapi-template/blob/master/LICENSE)
