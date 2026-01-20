@@ -1,32 +1,61 @@
 # fastapi-template
 
-[![PyPI version](https://img.shields.io/pypi/v/fastapi-template)](https://pypi.org/project/fastapi-template/)
 [![codecov](https://codecov.io/gh/remarkablemark/fastapi-template/graph/badge.svg?token=A5tAkYLEAw)](https://codecov.io/gh/remarkablemark/fastapi-template)
 [![lint](https://github.com/remarkablemark/fastapi-template/actions/workflows/lint.yml/badge.svg)](https://github.com/remarkablemark/fastapi-template/actions/workflows/lint.yml)
 
-🐍 FastAPI Template
+⚡ [FastAPI](https://fastapi.tiangolo.com/) template inspired by [Full Stack FastAPI Template](https://fastapi.tiangolo.com/project-generation/).
 
 ## Prerequisites
 
-- [Python](https://www.python.org/)
+[uv](https://docs.astral.sh/uv/#installation):
+
+```sh
+brew install uv
+```
 
 ## Install
 
-Install the package:
+Clone the repository:
 
 ```sh
-pip install fastapi-template
+git clone https://github.com/remarkablemark/fastapi-template.git
+cd fastapi-template
 ```
 
-## Usage
+Install the dependencies:
 
-Print the greeting:
-
-```py
-from fastapi-template import hello
-
-print(hello())
+```sh
+uv sync
 ```
+
+## Available Scripts
+
+In the project directory, you can run:
+
+### `uv run fastapi dev`
+
+Runs the app in development mode:
+
+- Server: http://127.0.0.1:8000
+- Documentation: http://127.0.0.1:8000/docs
+
+The server will reload if you make edits.
+
+### `uv run fastapi run`
+
+Runs the app in production mode.
+
+### `uv run pre-commit install`
+
+Installs the pre-commit script.
+
+### `uv run black .`
+
+Formats the code.
+
+### `uv run ruff check`
+
+Lints the code.
 
 ## License
 
