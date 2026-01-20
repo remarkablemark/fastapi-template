@@ -4,5 +4,5 @@ router = APIRouter(prefix="/healthcheck")
 
 
 @router.get("/")
-async def healthcheck() -> bool:
+def healthcheck() -> bool:
     return True
