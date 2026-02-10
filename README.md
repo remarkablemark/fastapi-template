@@ -54,9 +54,17 @@ Installs the pre-commit script.
 
 Formats the code.
 
+### `uv run isort .`
+
+Sorts and organizes imports.
+
 ### `uv run ruff check`
 
 Lints the code.
+
+### `uv run coverage run -m pytest && uv run coverage report`
+
+Runs tests with coverage reporting (fails if coverage is below 100%).
 
 ## License
 
