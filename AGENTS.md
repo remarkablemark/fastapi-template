@@ -81,8 +81,6 @@ uv run fastapi run
 - Standard library imports first, then third-party, then local imports
 - Use `isort` to maintain consistent import ordering
 - Use absolute imports for local modules (e.g., `from app.main import app`)
-- Use `# isort: skip` to skip sorting for specific import lines (e.g., when models need to be imported for side effects)
-- Use `# isort: skip_file` at the top of a file to skip the entire file
 
 ### Type Annotations
 
@@ -132,7 +130,6 @@ uv run fastapi run
 **100% test coverage is enforced** - `fail_under = 100` in pyproject.toml
 - Use `# pragma: no cover` for lines that are impossible/impractical to test
 - Add type hints for test fixtures to avoid pyright errors
-- Use `# isort: skip` for imports that need specific ordering
 
 ### Documentation
 
@@ -173,23 +170,28 @@ tests/
 ## Tool Configuration
 
 ### Black
+
 - Line length: 88 characters (default)
 - Fast mode enabled
 
 ### isort
+
 - Profile: black (compatible with Black formatting)
 - Line length: 88 characters
 
 ### Ruff
+
 - Target: Python 3.10+
-- Selected rules: pycodestyle, pyflakes, isort, flake8-bugbear, comprehensions, pyupgrade
+- Selected rules: pycodestyle, pyflakes, flake8-bugbear, comprehensions, pyupgrade
 - Enforces: no unused arguments, no print statements, proper exception handling
 
 ### Pyright
+
 - Strict type checking for `app/` directory
 - Reports unused imports, incorrect types, and type mismatches
 
 ### Coverage
+
 - Enforces 100% code coverage (`fail_under = 100`)
 - Tracks per-test coverage with dynamic context
 
