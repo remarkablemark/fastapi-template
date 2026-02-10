@@ -54,6 +54,9 @@ uv run ruff check
 # Auto-fix linting issues
 uv run ruff check --fix
 
+# Type checking with pyright
+uv run pyright
+
 # Run all pre-commit hooks
 uv run pre-commit run --all-files
 ```
