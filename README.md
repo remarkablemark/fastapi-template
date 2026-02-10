@@ -1,6 +1,7 @@
 # fastapi-template
 
 [![codecov](https://codecov.io/gh/remarkablemark/fastapi-template/graph/badge.svg?token=ldtrSznCY4)](https://codecov.io/gh/remarkablemark/fastapi-template)
+[![test](https://github.com/remarkablemark/fastapi-template/actions/workflows/test.yml/badge.svg)](https://github.com/remarkablemark/fastapi-template/actions/workflows/test.yml)
 [![lint](https://github.com/remarkablemark/fastapi-template/actions/workflows/lint.yml/badge.svg)](https://github.com/remarkablemark/fastapi-template/actions/workflows/lint.yml)
 
 ⚡ [FastAPI](https://fastapi.tiangolo.com/) template inspired by [Full Stack FastAPI Template](https://fastapi.tiangolo.com/project-generation/).
