@@ -33,6 +33,10 @@ uv sync
 
 In the project directory, you can run:
 
+### `uv run pre-commit install`
+
+Installs the pre-commit script.
+
 ### `uv run fastapi dev`
 
 Runs the app in development mode:
@@ -46,21 +50,17 @@ The server will reload if you make edits.
 
 Runs the app in production mode.
 
-### `uv run pre-commit install`
+### `uv run ruff format`
 
-Installs the pre-commit script.
-
-### `uv run black .`
-
-Formats the code.
-
-### `uv run isort .`
-
-Sorts and organizes imports.
+Formats the code (replaces Black).
 
 ### `uv run ruff check`
 
-Lints the code.
+Lints the code and checks import sorting (replaces isort).
+
+### `uv run ruff check --fix`
+
+Auto-fixes linting issues and sorts imports.
 
 ### `uv run coverage run -m pytest && uv run coverage report`
 
